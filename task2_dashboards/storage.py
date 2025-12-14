@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-APPS_SCRIPT_URL = "PASTE_YOUR_WEB_APP_URL_HERE"
+APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxVwrknbpAyilYPqp2Y2aIOkVr5BntTnnYF2I5feC-Q/dev"
 
 def save_review(rating, review, ai_response, ai_summary, action):
     payload = {
@@ -13,7 +13,7 @@ def save_review(rating, review, ai_response, ai_summary, action):
         "recommended_action": action
     }
 
-    requests.post(APPS_SCRIPT_URL, json=payload)
+    requests.post(https://script.google.com/macros/s/AKfycbxVwrknbpAyilYPqp2Y2aIOkVr5BntTnnYF2I5feC-Q/dev, json=payload)
 
 
 def read_reviews():
