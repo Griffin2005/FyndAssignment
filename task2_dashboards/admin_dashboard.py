@@ -1,5 +1,5 @@
 import streamlit as st
-from task2_dashboards.storage import read_reviews
+from storage import read_reviews
 from collections import Counter
 
 st.set_page_config(page_title="Admin Dashboard", layout="wide")
