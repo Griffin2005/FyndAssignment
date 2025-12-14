@@ -1,10 +1,9 @@
 import streamlit as st
-from storage import init_storage, read_reviews
+from storage import read_reviews
 from collections import Counter
 
 st.set_page_config(page_title="Admin Dashboard", layout="wide")
 
-init_storage()
 reviews = read_reviews()
 
 st.title("📊 Admin Dashboard")
