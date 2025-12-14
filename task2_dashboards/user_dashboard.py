@@ -1,6 +1,7 @@
 import streamlit as st
 from llm_utils import call_llm
-from task2_dashboards.storage import save_review
+from storage import save_review
+
 
 
 
