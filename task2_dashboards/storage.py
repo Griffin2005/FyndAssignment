@@ -17,5 +17,5 @@ def save_review(rating, review, ai_response, ai_summary, action):
 
 
 def read_reviews():
-    response = requests.get(https://script.google.com/macros/s/AKfycbzrG3sjWSEiXPg3vgvQwEPzaTKdRgALOgBRGwvmQ9pk6RJZeYtMlbB4wS2qQkU-FKWbAQ/exec)
+    response = requests.get(https://script.google.com/macros/s/AKfycbxVwrknbpAyilYPqp2Y2aIOkVr5BntTnnYF2I5feC-Q/dev)
     return response.json()
