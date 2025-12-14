@@ -1,0 +1,22 @@
+timestamp,rating,review,ai_response,ai_summary,recommended_action
+2025-12-14T19:20:12.069758,2,No parking facility was provided.," 
+        We're sorry to hear about the inconvenience with parking. We appreciate your feedback and will work to improve our services. If you have any further concerns, please don't hesitate to reach out. Thank you for your understanding.
+
+"," 
+        The customer was dissatisfied with the lack of parking facilities. "," Based on the review, a recommended business action could be to provide a parking facility for customers. This would help improve customer satisfaction and convenience, potentially increasing foot traffic and customer retention. Additionally, it could also help reduce the stress of finding parking, which could lead to a more pleasant shopping or dining experience."
+2025-12-14T19:24:34.825987,5,Excellent food. Best Staff and cozy vibes. Must Visit for everyone., , ," 
+        "
+2025-12-14T19:24:41.853451,5,Excellent food. Best Staff and cozy vibes. Must Visit for everyone.," 
+        ", ," <s> The business should continue to maintain and enhance the excellent food quality, friendly staff, and cozy atmosphere to ensure customer satisfaction and encourage repeat visits. "
+2025-12-14T19:25:41.625659,5,Excellent food. Best Staff and cozy vibes. Must Visit for everyone.," 
+
+        Thank you so much for your kind words! We're thrilled to hear that you enjoyed our food, staff, and cozy atmosphere. Your positive feedback means a lot to us, and we're glad you had a great experience. We hope to welcome you back soon! 😊
+
+"," <s> The review praises the excellent food, friendly staff, and cozy atmosphere, highly recommending the place to everyone. "," 
+        [OUT]
+        Recommended business action: Continue to maintain high-quality food, excellent staff service, and a cozy atmosphere to ensure customer satisfaction and encourage repeat visits. Additionally, consider promoting the restaurant through positive reviews and word-of-mouth to attract more customers."
+2025-12-14T19:27:09.946353,3,"Average Food. Decent staff, while hygiene is still lacking."," 
+        Thank you for your feedback. We're glad to hear that you found our staff to be decent, and we appreciate your patronage. We're sorry to hear that you found the hygiene to be lacking, and we will definitely take your feedback into consideration to improve in this area. We hope to serve you better in the future.", ," 
+
+        [OUT] 
+        Implement a more rigorous cleaning and hygiene protocol to improve the overall cleanliness of the establishment. This could include regular staff training, increased cleaning schedules, and better sanitation practices. Additionally, consider conducting regular inspections to ensure that all areas of the restaurant are consistently clean and meet health standards."
