@@ -1,46 +1,21 @@
-import csv
-import os
+import requests
 from datetime import datetime
-import subprocess
 
-DATA_PATH = "task2_dashboards/data/reviews.csv"
-
-def init_storage():
-    os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
-
-    if not os.path.exists(DATA_PATH):
-        with open(DATA_PATH, "w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow([
-                "timestamp",
-                "rating",
-                "review",
-                "ai_response",
-                "ai_summary",
-                "recommended_action"
-            ])
+APPS_SCRIPT_URL = "PASTE_YOUR_WEB_APP_URL_HERE"
 
 def save_review(rating, review, ai_response, ai_summary, action):
-    init_storage()
+    payload = {
+        "timestamp": datetime.now().isoformat(),
+        "rating": rating,
+        "review": review,
+        "ai_response": ai_response,
+        "ai_summary": ai_summary,
+        "recommended_action": action
+    }
 
-    with open(DATA_PATH, "a", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow([
-            datetime.now().isoformat(),
-            rating,
-            review,
-            ai_response,
-            ai_summary,
-            action
-        ])
+    requests.post(APPS_SCRIPT_URL, json=payload)
 
-    # Push update to GitHub
-    subprocess.run(["git", "add", DATA_PATH])
-    subprocess.run(["git", "commit", "-m", "Update reviews data"])
-    subprocess.run(["git", "push"])
 
 def read_reviews():
-    init_storage()
-
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+    response = requests.get(https://script.google.com/macros/s/AKfycbzrG3sjWSEiXPg3vgvQwEPzaTKdRgALOgBRGwvmQ9pk6RJZeYtMlbB4wS2qQkU-FKWbAQ/exec)
+    return response.json()
