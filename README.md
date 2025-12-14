@@ -7,68 +7,102 @@
 
 ## 📌 Overview
 
-This repository contains my submission for the **Fynd AI Intern – Take Home Assessment**, which consists of two tasks:
+This repository contains my submission for the **Fynd AI Intern – Take Home Assessment**, consisting of two tasks:
 
-- **Task 1:** Prompt engineering and evaluation for predicting Yelp review ratings (1–5 stars).
-- **Task 2:** A deployed AI-powered feedback system with separate User and Admin dashboards.
+- **Task 1:** Prompt engineering–based rating prediction for Yelp reviews.
+- **Task 2:** A fully deployed AI-powered feedback system with separate User and Admin dashboards.
+
+The project focuses on prompt design, evaluation, AI system behavior, and practical deployment.
 
 ---
 
 ## 🧠 Task 1 – Rating Prediction via Prompting
 
 ### Description
-Multiple prompt strategies were designed to classify Yelp reviews into star ratings using a Large Language Model (LLM). Each prompt was evaluated based on:
+Task 1 explores how different prompt designs affect a Large Language Model’s (LLM) ability to classify Yelp reviews into star ratings (1–5).  
+Three prompt versions were designed and evaluated based on:
+
 - Prediction accuracy
 - JSON validity rate
 - Reliability and consistency
 
-### Deliverables
-- Jupyter Notebook with prompt experiments
-- Evaluation metrics and comparison table
-- Detailed report explaining approach and findings
+### Contents
+- **Jupyter Notebook:**  
+  `task1_rating_prediction/task1_prompt_experiments.ipynb`
+
+- **Report (PDF):**  
+  `reports/Task1_Report.pdf`
+
+The notebook contains all experiments, prompt iterations, evaluation logic, and comparison results.
 
 ---
 
 ## 🌐 Task 2 – Two-Dashboard AI Feedback System
 
-### User Dashboard
-- Allows users to submit a star rating and review
-- Generates an AI-powered, empathetic response
-- Stores all submissions
+### User Dashboard (Public-Facing)
+Users can:
+- Select a star rating
+- Write a short review
+- Submit feedback and receive an AI-generated response
 
-### Admin Dashboard
-- Displays all user submissions
-- Shows AI-generated summaries and recommended actions
-- Includes basic analytics such as average rating and rating distribution
+### Admin Dashboard (Internal-Facing)
+The admin dashboard provides:
+- A live list of all submissions
+- AI-generated summaries
+- AI-recommended next actions
+- Basic analytics such as average rating and rating distribution
+
+### Shared Data Source
+Both dashboards read from and write to a **shared Google Sheet** via a **Google Apps Script web API**, ensuring synchronization despite isolated cloud runtimes.
 
 ---
 
 ## 🚀 Deployment Links
 
 - **User Dashboard:**  
-  _Add Streamlit URL here_
+  _PASTE USER DASHBOARD STREAMLIT URL HERE_
 
 - **Admin Dashboard:**  
-  _Add Streamlit URL here_
+  _PASTE ADMIN DASHBOARD STREAMLIT URL HERE_
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- Streamlit
-- OpenRouter (LLM)
-- CSV (Lightweight storage)
-- Streamlit Community Cloud (Deployment)
-
----
-
-## 📄 Reports
-
-- **Task 1 Report (PDF):**  
-  _Add PDF link here_
+- **Language:** Python  
+- **Web Framework:** Streamlit  
+- **LLM Provider:** OpenRouter (free open-source models)  
+- **Data Storage:** Google Sheets via Google Apps Script  
+- **Deployment:** Streamlit Community Cloud  
 
 ---
 
 ## 📁 Repository Structure
 
+task1_rating_prediction/
+│ └── task1_prompt_experiments.ipynb
+│
+task2_dashboards/
+│ ├── user_dashboard.py
+│ ├── admin_dashboard.py
+│ ├── llm_utils.py
+│ └── storage.py
+│
+reports/
+│ └── Task1_Report.pdf
+│
+requirements.txt
+README.md
+
+
+---
+
+## ✅ Notes
+
+- Only free and permitted LLMs were used.
+- Both dashboards are fully deployed and publicly accessible.
+- The project emphasizes clarity, evaluation, and real-world system constraints.
+
+---
+
+Thank you for reviewing my submission.
